@@ -1,0 +1,35 @@
+/* Workshop 2: Dynamic Memory at_home
+File: reflection.txt
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Section : OOP244SII
+File: reflect.txt for workshop 3
+*/
+1. How many elements are there in each C-style character string that stores a
+family or given name for the account? Why?
+
+*There 41 elements in each string that stores family or given name. The array of string can only accept up to 40 elements since
+the last character of a string array is a null character (\0). That is why we add 1 extra space for the null character.
+
+2. Your class declares two member functions named set(...). In C, this would
+generate an error. Name the feature of C++ that allows this
+
+*We can define multiple functions with the same function name in c++.
+This feature of c++ is called Function Overloading.
+We can have multiple functions with same function name as long as the types and/or number of arguments of each functions are different.
+
+3. What have you learned during this workshop?
+
+I learned the difference between class and struct in this workshop 
+and also learned how to define private object of a class type to the empty state.
+
+
+Quiz 3 Reflection:
+
+*
+The compiler stores the member function instructions separately and only once for all objects of the class.
+
+I answered FALSE but the corrected answer is TRUE. 
+If a class have multiple objects, the member functions intructions are only stored once and stored separately by the compiler 
+for all the objects of the class

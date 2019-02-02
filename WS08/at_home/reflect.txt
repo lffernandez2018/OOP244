@@ -1,0 +1,24 @@
+/* Workshop 8 at_home: Virtual Functions
+File: reflect.txt
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Course and Section : OOP244SII
+Date: 2018-04-02
+*/
+
+1. What is the difference between an abstract base class and a concrete class?
+* An abstract base class contains one or more pure virtual function and has no implementation
+while a concrete class has implementations in all its member functions.
+
+
+2. Identify the functions that shadow functions of the same name in your solution?
+* bool credit(double), bool debit(double), void monthEnd(), and void display(std::ostream&) const.
+
+3. Explain what have you learned in this workshop.
+* I learned how to define a pure virtual functions. Create a pure interface abstract base class.
+Create concreate classe that derives from a pure interface abstract base class. 
+
+
+QUIZ 10 REFLECTION
+* I got 10/10 in quiz 10. 

@@ -1,0 +1,33 @@
+/* Workshop 9 at_home: Function Templates
+File: reflect.txt
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Course and Section : OOP244SII
+Date: 2018-04-12
+*/
+
+1. What happens if you try to put your templated functions in Data.cpp? Does
+your source code compile if you move all functions to Data.h? Explain.
+* When I move all my templated functions in Data.cpp, the compiler encounter an error.
+The compiler cannot find the readRow() and the display() functions. At compile time, compiler must see both declaration and definition of templates inorder to be compiled succesfully.
+
+2. Move one templated function into ws9_lab.cpp. Does it work now? Do you
+need to define the template function above main(), before it is used, or can
+you define it below main()?
+*Putting the templated function display(const char* name, const T* data, int n) in the ws9_lab.cpp works fine but the templated function should be define before main() function
+so that the compiler can see it.
+
+3. Could you have done this lab without templates, by just overloading your
+functions in Data.h to accept integer and double arguments? What is the
+advantage of using templates?
+* Yes. We can still do this lab without using templates. However, the code will be unecessarily long and there would be repeatition of codes.
+Using templates makes the code cleaner and shorter. 
+
+4. Are the following equivalent?
+template<class T>
+template<typename T>
+* Yes, they are equivalent.
+
+QUIZ 9 REFLECTION
+10/10

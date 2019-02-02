@@ -1,0 +1,35 @@
+1. What is a namespace? Explain its purpose.
+A namespace is a scope for a set of identifiers that it encloses. 
+The purpose of a namespace is to avoid naming conflict. 
+When a program gets bigger, it's hard to keep track of the function names and using the same function name is not avoidable. Using Same function name in C++ generates error since compiler cannot determine which is which.
+Using a namespace avoid naming collisions.
+
+2. Why are header files needed? Explain.
+Header files are needed in a program for code readability and maintainability. 
+Header files keep our code organized, such as putting declarations and prototypes in header files and definitions in cpp files. 
+It makes our code shorter which speeds up the compile time and can include it in any program that needs the same functions which in the header files.
+
+3. Explain why you should never compile header files
+Since we included the header files in the .cpp files (#include"file.h"), there's no need to compile header files.
+When compiler compiles cpp files, it will include the header file.
+
+4. Explain why you should never include .cpp files in another file
+Including .cpp files in another file will break the one definition rule in C++ and will generate error when compile. 
+The .cpp file you included will be compile twice and generate error due to duplication. 
+
+5.  Explain in your own words what have you learned on this workshop
+In this workshop, I learned how to divide a whole long single file program into multiple header files and implementation files (cpp). 
+Also, I learned how to link them and compile multiple files to create one executable file. I also practiced using namespaces and 
+to safeguard the header files. 
+
+
+Quiz 1 Reflection
+
+*To expose all of the identifiers within namespace english, we write
+a) using namespace english;
+b) english::X++
+c) using english::x
+d) All of the above
+
+I answered d, All of the above but the correct answer is a, using namespace english;.
+My mistake was I did not read the question carefully. 

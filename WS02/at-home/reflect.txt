@@ -1,0 +1,44 @@
+/* Workshop 2: Dynamic Memory at_home
+File: reflection.txt
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Section : OOP244SII
+*/
+1. Why do you need to allocate new dynamic memory when you increase the size of an existing array of dynamically allocated memory?
+To avoid memory leaks which will result to error, we need to allocate new dynamic memory when we change the size of the existing array of dynamically allocated memory.
+ 
+
+2. Why don’t we need to use the delete operator on this array itself? Explain.
+The memory of array of characters for name Kingdom is allocated at load time and is therefore a static memory. Static memory are fixed and cannot be deallocated during execution.
+That is why we cannot deallocate the name kingdom array. 
+
+3. There are two display(...) function definitions. How does the compiler know which definition to call from your main function? 
+The compiler know which function definition to call based on the parameters passed. Although there are two display(...) functions,
+they have different numbers of parameters, that is why the compiler can determine which function to call.
+
+4. Explain what have you have learned in this workshop.
+I learned how to allocate dynamic memory of array of characters and deallocate them afterwards. I also practiced overloading functions and 
+learned that compiler wont generate an error because even when the function has the same name, they are completely different functions because they are define differently and has different parameters.
+
+
+
+Quiz 2 Reflection:
+
+*
+1. class Student {
+2.     int no;
+3.     float grade[NG];
+4.     int ng;
+5.   public:
+6.     void display() const;
+7. };  
+8. //client code   
+9. void foo(const Student& harry) {
+10.    cout << harry.no;  
+11.  }
+One of the line of above code will generate a compile time error. Write down the line number.
+
+I answered 9 but the corrected answer is 10. 
+Since class is a private by default, function foo cannot accesss the member no. Only the member function of class Student can access the member of class Student.
+

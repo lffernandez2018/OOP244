@@ -1,0 +1,38 @@
+/* Workshop 4 at_home: Constructor
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Course and Section : OOP244SII
+*/
+
+1. What is a safe empty state? Could you define another state as the safe empty
+state?
+
+*The safe empty state means that the initial value of the data members are not junk. 
+Without initializing the data members to a safe empty state, the default values of the data members would be junk characters.
+If the value of the data members are 0 or '\0', it means that they are in safe empty state.
+
+2. Describe how you have minimized code duplication
+
+*I define function setSafe(), which initialize the data members to the safe empty state that I can use multiple times throughout the program.
+Since there are 3 Constructor, I can just call setSafe() function 3 times. 
+This minimizes code duplication and hence, made my code relatively shorter.
+
+3. Explain why the canTravelWith(...) member function can access the private data of the object referenced in its parameter.
+
+* The object has type Passenger. The canTravelWith(..) function is a member function of class Passenger and has access to the private data members of the class Passenger.
+Member functions has access to the data members of the same class or struct.
+
+4. What statement do you need to add to ensure that the strncpy(...) function executes correctly?
+
+* To ensure that the strncpy(...) function executes accurately, We need to include the cstring header file.
+Since strncpy(...) function definition is in cstring header file.
+#include <cstring>
+
+5. Explain what you have learned in this workshop.
+I learned how to initialize data members into safe empty state, to use constructor, to overload constructor, and to use existing codes to avoid code duplication.
+
+
+Quiz 4 Reflection:
+
+* I got 10/10.

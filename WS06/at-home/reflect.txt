@@ -1,0 +1,28 @@
+
+/* Workshop 6 at_home: Class with a Resource
+File: Reflect.txt
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Course and Section : OOP244SII
+*/
+1. Why does the copy assignment operator check for self-assignment before
+doing anything else?
+* To avoid objects to be assign to themselves and avoid deallocation of the memory holding the resource data of the object.
+If deallocation of the object resource happens, we would lose access to the object resource thus our assignment logic will fail.
+
+2. List how you avoided duplication of code.
+Since the contructor with three parameters, the copy constructor, and copy assignment operator have almost the same definition,
+I create a new function called init(), that accepts three parameters and does not return anything. I called this function in the contructor with three parameters, copy constructor, 
+and copy assignment operator implementation. Thus, avoiding code duplication.
+
+3. List what you have learned in completing this workshop.
+I learned how copy constructor, and copy assignment operator works, and to avoid code duplication as possible.
+
+
+Quiz 6 Reflection:
+1. The default copy constructor and the default copy assignment operator does shallow copy.
+* answer: TRUE
+2. To connect a file to an existing file object, we call the is_open() member function on the object. 
+* answer: False
+To connect a file to an existing file object, we call the open() member function on the object.  

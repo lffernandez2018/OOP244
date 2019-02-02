@@ -1,0 +1,33 @@
+
+/* Workshop 5 at_home: Member Operator Overload
+File: reflect.txt
+Name:      Leny Fe Fernandez
+email : lffernandez@myseneca.ca
+Student#:  120818174
+Course and Section : OOP244SII
+*/
+
+1. The operator+ returns a Fraction object. Explain why this operator should
+not return a reference to a Fraction object.
+
+*The data type of operator+ is Fraction and not Fraction&. Therefore, it cannot return a reference to a Fraction object. Furthermore, the function of operator+ is just a query.
+It does not change or modified values so it doesn't return a reference to a Fraction object.
+
+2. List the temporary objects in the tester module.
+
+*In my operator+ and operator* implementation, I declare a temporary object called obj. 
+
+3. List the simplifications that you made to your class to minimize duplication
+
+* I created a public member function isEquals(const Fraction& obj1, const Fraction& obj2) const. It has bool as return type and receives an unmodifiable reference to two Fraction Objects.
+I used this function for operator== and operator!=. Since both function compare two objects, isEquals function minimizes code duplication.
+
+4. Explain what you have learned in this workshop.
+
+* In this workshop, I learned to overload operators and access current object within member functions.
+
+
+Quiz 5 Reflection:
+
+* The copy assignment operator copies data from an existing object to an existing object
+- I answered FALSE but the correct answer is TRUE. Only the copy Constructor copies data form an existing object to a new object.
